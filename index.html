@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>MAKS COLLECTION</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+
+
+  <div class="texte-droite">
+    <h1>Maks Collection</h1>
+    <div class="entete">
+  <div class="logo-gauche">
+    <a href="#">
+     <img src="img/Lmaks2-removebg-preview.png" alt="Maks Collection" class="logo">
+    </a>
+  </div>
+    <p class="slogan">Des Chaussures & sacs pour femmes et jeunes filles</p>
+    <p class="tagline">✨ Livraison rapide & Paiement sécurisé ✨</p>
+  </div>
+</div>
+
+
+    <nav>
+      <a href="#produits">Produits</a>
+      <a href="#contact">Contact</a>
+      <a href="#" onclick="afficherPanier()" style="position: relative;">
+        🛒 Panier 
+        <span id="quantite" class="badge">0</span>
+      </a>
+    </nav>
+  </header>
+
+  <section id="produits">
+    <h2>Nos Produits</h2>
+
+   <div class="produit">
+  <img src="img/img1_noir.jpg" alt="SAC NOIR">
+  <h3>Sac noir</h3>
+  <p>Prix : 15 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Sac noir', 15000, 'img1_noir.jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/img2_blanc.jpg" alt="SAC BLANC">
+  <h3>Sac blanc</h3>
+  <p>Prix : 10 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Sac blanc', 10000, 'img2_blanc.jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/img3_beige.jpg" alt="Sac maron">
+  <h3>Sac maron</h3>
+  <p>Prix : 15 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Sac maron', 15000, 'img3_beige.jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/img4_bleu.jpg" alt="Sac bleu">
+  <h3>Sac bleu</h3>
+  <p>Prix : 10 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Sac bleu', 10000, 'img4_bleu.jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/img5_maron.jpg" alt="Sac maron élégant">
+  <h3>Sac maron</h3>
+  <p>Prix : 15 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Sac maron', 15000, 'img5_maron.jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/img6_rouge.jpg" alt="Sac rouge">
+  <h3>Sac rouge</h3>
+  <p>Prix : 10 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Sac rouge', 10000, 'img6_rouge.jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/img7_violet.jpg" alt="Sac violet">
+  <h3>Sac violet</h3>
+  <p>Prix : 15 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Sac violet', 15000, 'img7_violet.jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/img8_vert.jpg" alt="Sac vert">
+  <h3>Sac vert</h3>
+  <p>Prix : 10 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Sac vert', 10000, 'img8_vert.jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/nouv1.jpg" alt="sac multicolore">
+  <h3>Sac multicolore</h3>
+  <p>Prix : 15 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Sac multicolore', 15000, 'nouv1.jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/nouv2.jpg" alt="sac multicolore">
+  <h3>Sac multicolore</h3>
+  <p>Prix : 15 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Sac multicolore', 15000, 'nouv2.jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/nouv3.jpg" alt="sac multicolore">
+  <h3>Sac multicolore</h3>
+  <p>Prix : 15 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Sac multicolore', 15000, 'nouv3.jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/nouv4.jpg" alt="Sac multicolore">
+  <h3>Sac multicolore</h3>
+  <p>Prix : 15 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Sac multicolore', 15000, 'nouv4.jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/img10_beige_clair.jpg" alt="Sac beige clair">
+  <h3>Sac beige clair</h3>
+  <p>Prix : 10 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Sac beige clair', 10000, 'img10_beige_clair.jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/img12.jpg" alt="Sac noir">
+  <h3>Sac Noir Élégant</h3>
+  <p>Prix : 10 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Sac Noir', 10000, 'img12.jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/img13.jpg" alt="Sac rouge">
+  <h3>Sac rouge</h3>
+  <p>Prix : 15 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Sac rouge', 15000, 'img13.jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/img14.jpg" alt="Sac maron">
+  <h3>Sac maron Élégant</h3>
+  <p>Prix : 10 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Sac maron', 10000, 'img14.jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/img15.jpg" alt="Sac noir">
+  <h3>Sac Noir</h3>
+  <p>Prix : 15 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Sac noir', 15000, 'img15.jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/img16.jpg" alt="Sac Maron beige">
+  <h3>Sac maron/beige</h3>
+  <p>Prix : 10 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Sac Maron beige', 10000, 'img16.jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/img18.jpg" alt="Sac beige/maron">
+  <h3>Sac beige/maron Élégant</h3>
+  <p>Prix : 10 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Sac beige/maron Élégant', 10000, 'img18.jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/ensemble.jpg" alt="Sac et chaussure">
+  <h3>Sac & chaussure Zara</h3>
+  <p>Prix : 10 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Sac & chaussure Zara', 10000, 'ensemble.jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/img21.jpg" alt="Lot de sacs au choix">
+  <h3>Lot de sacs au choix</h3>
+  <p>Prix : 10 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Lot de sacs au choix', 10000, 'img21.jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/img9.jpg" alt="Lot de sacs au choix">
+  <h3>Lot de sacs au choix</h3>
+  <p>Prix : 15 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Lot de sacs au choix', 15000, 'img9.jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/img22.jpg" alt="Lot de sacs au choix">
+  <h3>Lot de sacs au choix</h3>
+  <p>Prix : 10 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Lot de sacs au choix', 10000, 'img22.jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/img11.jpg" alt="Lot de sacs au choix">
+  <h3>Lot de sacs au choix</h3>
+  <p>Prix : 15 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Lot de sacs au choix', 15000, 'img11.jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/img23.jpg" alt="Lot de sacs au choix">
+  <h3>Lot de sacs au choix</h3>
+  <p>Prix : 10 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Groupage au choix', 10000, 'img23.jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/img24.jpg" alt="Lot de sacs au choix">
+  <h3>Lot de sacs au choix</h3>
+  <p>Prix : 10 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Lot de sacs au choix', 10000, 'img24.jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/img25.jpg" alt="Lot de sacs au choix">
+  <h3>Lot de sacs au choix</h3>
+  <p>Prix : 10 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Lot de sacs au choix', 10000, 'img25.jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/img26.jpg" alt="Lot de sacs au choix">
+  <h3>Lot de sacs au choix</h3>
+  <p>Prix : 10 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Lot de sacs au choix', 10000, 'img26.jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/img27.jpg" alt="Lot de sacs au choix">
+  <h3>Lot de sacs au choix</h3>
+  <p>Prix : 10 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Lot de sacs au choix', 10000, 'img27.jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/img28.jpg" alt="Lot de sacs au choix">
+  <h3>Lot de sacs au choix</h3>
+  <p>Prix : 10 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Lot de sacs au choix', 10000, 'img28.jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/img29.jpg" alt="Lot de sacs au choix">
+  <h3>Groupage au choix</h3>
+  <p>Prix : 10 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Lot de sacs au choix', 10000, 'img29.jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/img19.jpg" alt="Lot de sacs au choix">
+  <h3>Lot de sacs au choix</h3>
+  <p>Prix : 15 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Lot de sacs au choix', 15000, 'img19.jpg')">Ajouter au panier</button>
+</div>
+ <h2>Nos Chaussures</h2>
+<div class="produit">
+  <img src="img/chaussure3 (1).jpg" alt="Chaussure Hermes vert">
+  <h3>Chaussure Hermes vert</h3>
+  <p>Prix : 12 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Chaussure Hermes', 12000, 'chaussure3 (1).jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/chaussure4.jpg" alt="Chaussure Hermes jaune">
+  <h3>Chaussure Hermes jaune</h3>
+  <p>Prix : 12 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Chaussure Hermes jaune', 12000, 'chaussure4.jpg')">Ajouter au panier</button>
+</div>
+<div class="produit">
+  <img src="img/chaussure6.jpg" alt="Chaussure Hermes rose">
+  <h3>Chaussure Hermes rose</h3>
+  <p>Prix : 12 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Chaussure Hermes rose', 12000, 'chaussure6.jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/chaussure7.jpg" alt="Chaussure Hermes rouge">
+  <h3>Chaussure Hermes rouge</h3>
+  <p>Prix : 12 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Chaussure Hermes rouge', 12000, 'chaussure7.jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/chaussure8.jpg" alt="Chaussure Hermes noir">
+  <h3>Chaussure Hermes Noir</h3>
+  <p>Prix : 12 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Chaussure Hermes Noir', 12000, 'chaussure8.jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/chaussure9.jpg" alt="Chaussure Hermes marron avec sac">
+  <h3>Chaussure Zara marron avec sac</h3>
+  <p>Prix : 25000 FCFA</p>
+  <button onclick="ajouterAuPanier('Chaussure Hermes marron avec sac', 25000, 'chaussure9.jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/chaussure10.jpg" alt="Chaussure Hermes blanc">
+  <h3>Chaussure Hermes blanc</h3>
+  <p>Prix : 12 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Chaussure Hermes blanc', 12000, 'chaussure10.jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/chaussure11.jpg" alt="Chaussure Hermes marron">
+  <h3>Chaussure Hermes marron</h3>
+  <p>Prix : 12 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Chaussure Hermes marron', 12000, 'chaussure11.jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/chaussure12.jpg" alt="Chaussure Zara beige">
+  <h3>Chaussure Hermes beige</h3>
+  <p>Prix : 12 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Chaussure Hermes beige', 12000, 'chaussure12.jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/nouv5.jpg" alt="Chaussure Zara bleu">
+  <h3>Chaussure Hermes bleu</h3>
+  <p>Prix : 12 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Chaussure Hermes bleu', 12000, 'nouv5.jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/nouv6.jpg" alt="ChaussureHermes vert">
+  <h3>Chaussure Hermes vert</h3>
+  <p>Prix : 12 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Chaussure Hermes vert', 12000, 'nouv6.jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/nouv7.jpg" alt="Chaussure Hermes blanc">
+  <h3>Chaussure Hermes blanc</h3>
+  <p>Prix : 12 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Chaussure Hermes blanc', 12000, 'nouv7.jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/nouv8.jpg" alt="Chaussure Hermes meuve">
+  <h3>Chaussure Hermes meuve</h3>
+  <p>Prix : 12 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Chaussure Hermes meuve', 12000, 'nouv8.jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/nouv9.jpg" alt="Chaussure Hermes gris">
+  <h3>Chaussure Hermes gris</h3>
+  <p>Prix : 12 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Chaussure Hermes gris', 12000, 'nouv9.jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/nouv10.jpg" alt="Chaussure Hermes jaune">
+  <h3>Chaussure Hermes jaune</h3>
+  <p>Prix : 12 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Chaussure Hermes jaune', 12000, 'nouv10.jpg')">Ajouter au panier</button>
+</div>
+
+ <div class="produit">
+  <img src="img/chaussur1.jpg" alt="Chaussure zara">
+  <h3>Chaussure Zara bleu</h3>
+  <p>Prix : 12 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Chaussure Zara', 12000, 'chaussur1.jpg')">Ajouter au panier</button>
+</div>
+
+<div class="produit">
+  <img src="img/chaussure2.jpg" alt="Chaussure Zara maron">
+  <h3>Chaussure Zara maron</h3>
+  <p>Prix : 12 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Chaussure Zara maron', 12000, 'chaussure2.jpg')">Ajouter au panier</button>
+</div>       
+<div class="produit">
+  <img src="img/chaussure5.jpg" alt="Chaussure Hermes bleu">
+  <h3>Chaussure Hermes bleu</h3>
+  <p>Prix : 12 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Chaussure Hermes bleu', 12000, 'chaussure5.jpg')">Ajouter au panier</button>
+</div>
+<div class="produit">
+  <img src="img/nouv12.jpg" alt="Chaussure Zara maron">
+  <h3>Chaussure Prada beige</h3>
+  <p>Prix : 13 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Chaussure Prada beige', 13000, 'chaussure2.jpg')">Ajouter au panier</button>
+</div>       
+<div class="produit">
+  <img src="img/nouv11.jpg" alt="Chaussure Hermes beige">
+  <h3>Chaussure Hermes beige</h3>
+  <p>Prix : 12 000 FCFA</p>
+  <button onclick="ajouterAuPanier('Chaussure Hermes beige', 12000, 'chaussure5.jpg')">Ajouter au panier</button>
+</div>
+    
+    <!-- Tu peux ajouter d'autres produits ici -->
+  </section>
+
+<footer class="footer" id="contact">
+  <div class="footer-content">
+    <h2>Maks Collection</h2>
+    <p>Chaussures & sacs tendance pour femmes et jeunes filles.</p>
+    <p> Votre boutique de mode à Kaolack. Spécialiste en sacs à main et
+              chaussures pour femmes.</p>
+    <p style="font-style: italic;">"Reste stylée, même dans tes pas."</p>
+  <div class="reseaux">
+  <p>  
+    <img src="https://cdn-icons-png.flaticon.com/24/733/733585.png" alt="WhatsApp" class="icone">
+    WhatsApp : <a href="https://wa.me/221777324694" target="_blank">+221 77 732 46 94</a>
+  </p>
+  <p>
+    <img src="https://cdn-icons-png.flaticon.com/24/1384/1384031.png" alt="Instagram" class="icone">
+    Instagram : <a href="https://instagram.com/pape_insa_ba" target="_blank">@pape_insa_ba</a>
+  </p>
+  <p>
+    <img src="https://cdn-icons-png.flaticon.com/24/1384/1384033.png" alt="Snapchat" class="icone">
+    Snapchat : <a href="https://snapchat.com/add/pape_insa_ba" target="_blank">@pape_insa_ba</a>
+  </p>
+</div>
+<p>
+  📞 Téléphone : 
+  <a href="tel:+221777324694">+221 77 732 46 94</a>
+</p>
+
+
+    <p>📍 Adresse : KAOLACK: SARRA, Sénégal</p>
+    <p>📦 Livraison rapide dans tout le Sénégal</p>
+    <p>💳 Paiement : Wave & Orange Money</p>
+  </div>
+
+  <div class="footer-bottom">
+  </div>
+  
+</footer>
+
+</footer>
+
+
+  <!-- 🛒 Panier flottant -->
+  <div id="panier" style="display: none;">
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <h2>Mon Panier</h2>
+      <button onclick="fermerPanier()">❌</button>
+    </div>
+    <ul id="liste-panier"></ul>
+    <p><strong>Total : <span id="total">0</span> FCFA</strong></p>
+    <button onclick="viderPanier()">🗑️ Vider</button>
+    <button onclick="validerCommande()">📩 Valider sur WhatsApp</button>
+  </div>
+
+  <!-- Script JavaScript -->
+  <script src="script.js"></script>
+  
+  <footer>
+     
+  </footer>
+  <div style="text-align: center; margin-top: 40px; font-family: sans-serif; color: #444;">
+  <p>
+    &copy; Conçu par <strong>INS TECH</strong> —
+    <a href="tel:+221777324694" style="text-decoration: none; color: #007bff;">📞 Appeler</a> |
+    <a href="https://wa.me/221777324694" target="_blank" style="text-decoration: none; color: #25d366;">💬 WhatsApp</a> |
+    <a href="mailto:Papeinsaba03@gmail.com.com" style="text-decoration: none; color: #ea4335;">📧 E-mail</a>
+  </p>
+</div>
+
+</body>
+</html>
